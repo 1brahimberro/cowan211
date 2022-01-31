@@ -44,5 +44,30 @@ class TESTreadInput {
     
   
     }
+   
+  @Test
+  
+  public void testmonthString() {
+    Assert.assertTrue(date.monthString(2).equalsIgnoreCase("February"));
+  
+  
+  }
 
+  @Test
+  
+  public void testmonthOK() {
+    String testMonth2 = "July";
+    Assert.assertTrue(date.monthOK(testMonth2) == true);
+    
+    
+  } 
+  
+  @Test
+  
+  public void testEquals() {
+    Date otherDate = new Date(1, 2, 2000);
+    Assert.assertTrue(date.equals(otherDate));
+    
+    
+  }
 }
