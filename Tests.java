@@ -70,4 +70,13 @@ class TESTreadInput {
     
     
   }
+  
+  @Test
+  
+  public boolean monthCheck(String month) {
+
+    return switch (month) {
+      case "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" -> true;
+      default -> false;
+    };
 }
